@@ -12,7 +12,8 @@ input BookInput {
 type User {
     _id: ID!
     username: String!
-    email: String!
+    email: String!    
+    password: String! 
     bookCount: Int!
     savedBooks: [Book]
 }
@@ -44,3 +45,5 @@ type Mutation {
 `;
 
 module.exports = typeDefs;
+
+// may not need password in User
