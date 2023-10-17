@@ -12,8 +12,9 @@ module.exports = {
     },
   }),
   // function for our authenticated routes
-  authMiddleware: function (req) {
+  authMiddleware: function (params) {
     // allows token to be sent via  req.query or headers
+    const req = params.req;
     let token = req.body.token || req.query.token || req.headers.authorization;
 
     // ["Bearer", "<tokenvalue>"]
