@@ -13,8 +13,11 @@ import { searchGoogleBooks } from '../utils/API';
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 import { useMutation } from '@apollo/client';
 import { SAVE_BOOK } from '../utils/mutations';
+import { useNavigate } from 'react-router-dom';
 
 const SearchBooks = () => {
+
+  const navigate = useNavigate();
   // create state for holding returned google api data
   const [searchedBooks, setSearchedBooks] = useState([]);
   // create state for holding our search field data
@@ -78,6 +81,9 @@ const SearchBooks = () => {
 
       // if book successfully saves to user's account, save book id to state
       setSavedBookIds([...savedBookIds, savedBook._id]);
+
+      navigate('/saved');
+
     } catch (err) {
       console.error(err);
     }
