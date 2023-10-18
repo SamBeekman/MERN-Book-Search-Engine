@@ -6,7 +6,7 @@
 
 ## Description
 
-The purpose of this project was to refactor the code from an existing RESTful API into a MERN stack using GraphQL. I learned a lot about the different ways these APIs work and the different methods required for their functionality.
+The purpose of this project was to refactor the code from an existing RESTful API into a MERN stack using Apollo Server/Client and GraphQL. I learned a lot about the different ways these APIs work and the different methods required for their functionality.
 
 
 ## Table of Contents
