@@ -25,7 +25,12 @@ To run the project locally, clone the repo, instal the packages with 'npm i' and
 
 ## Usage
 
-Free to use
+Free to use!
+
+Link to deployed Application: 
+
+![localhost_3000_saved](https://github.com/SamBeekman/MERN-Book-Search-Engine/assets/131665093/8efca3f4-754e-41f0-9d58-af19ca51f17d)
+
 
 
 ## Contributing
